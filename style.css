@@ -127,7 +127,7 @@ img {
 /* Card icons (Bootstrap Icons) */
 #services .card .bi {
   font-size: 2.5rem;
-  color: #0d6efd;
+  color: #fd450d;
   margin-bottom: 15px;
 }
 
@@ -154,4 +154,68 @@ img {
     font-size: 2rem;
     margin-bottom: 10px;
   }
+}
+/*  MY WORK SECTION */
+.work-text {
+  max-width: 800px;
+  margin: 0 auto 60px;
+}
+
+.work-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #555;
+}
+#my-work .card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#my-work .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+ 
+#my-work .card-img-top {
+  width: 100%;
+  height: 220px;           
+  object-fit: cover;    
+}
+
+/* ===== CARD BODY ALIGNMENT ===== */
+#my-work .card-body {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#my-work .card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#my-work .card-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  flex-grow: 1;  
+}
+
+ 
+#my-work .btn-primary {
+  background-color: #53a7d8;   
+  border: none;
+  border-radius: 30px;
+  padding: 10px 22px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#my-work .btn-primary:hover {
+  background-color: #4fc5e3;
+  transform: scale(1.05);
 }
