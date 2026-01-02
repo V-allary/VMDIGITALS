@@ -52,18 +52,18 @@ app.post('/submit-form', async (req, res) => {
     transporter.sendMail(mailOptions, (err) => {
       if (err) {
         console.error('Email error:', err);
-        return res.status(500).json({ message: 'Failed to send email' });
+        return res.redirect('/?error=true');
       }
 
-      res.status(200).json({ message: 'Message sent successfully!' });
+      // SUCCESS → redirect back to homepage
+      res.redirect('/?success=true');
     });
 
   } catch (error) {
-    console.error(error);
-    res.status(500).json({ message: 'Server error' });
+    console.error('Server error:', error);
+    res.redirect('/?error=true');
   }
-});
-
+})
 // ===== Start Server =====
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
