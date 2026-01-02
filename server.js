@@ -40,7 +40,7 @@ app.post('/submit-form', async (req, res) => {
   });
 
   const mailOptions = {
-    from: 'vallarymitchelle1@gmail.com', //email 
+    from: 'vmdigitalswebdevelopment@gmail.com', //email 
     to:  recipientEmail,
     subject: `New Message from ${name}`,
     text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
