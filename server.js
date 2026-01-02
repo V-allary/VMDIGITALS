@@ -42,6 +42,7 @@ app.post('/submit-form', async (req, res) => {
   const mailOptions = {
     from: 'vmdigitalswebdevelopment@gmail.com', //email 
     to:  recipientEmail,
+    replyTo: email,
     subject: `New Message from ${name}`,
     text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
   };
