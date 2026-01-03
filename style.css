@@ -213,8 +213,8 @@ img {
   background-color: #53a7d8;   
   border: none;
   border-radius: 16px;
-  padding: 5px 14px;
-  font-size: 0.7rem;
+  padding: 8px 16px;
+  font-size: 0.75rem;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
