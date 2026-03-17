@@ -28,14 +28,14 @@ app.post('/submit-form', async (req, res) => {
       return res.status(400).json({ message: 'All fields are required' });
     }
 
-    const recipientEmail = 'vmdigitalswebdevelopment@gmail.com';
+    const recipientEmail = 'contact@vmdigitals.com';
 
     // Email transporter
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
         user: recipientEmail,
-        pass: process.env.PTSO, // Gmail App Password
+        pass: process.env.PTSO, 
       },
     });
 
